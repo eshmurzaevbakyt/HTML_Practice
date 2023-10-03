@@ -71,6 +71,30 @@
             display: block;
             margin: 20px auto;
         }
+
+
+#toggle-content {
+    display: none;
+}
+
+#toggle-button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggle-button:hover {
+    background-color: #555;
+}
+
+.hidden {
+    display: none;
+}
+</style>
+
     </style>
 </head>
 <body>
@@ -86,6 +110,14 @@
         <a href="#table">Table</a>
     </nav>
     <main>
+        <button id="toggle-content">Welcome to the World of Predators</button>
+        <section id="toggle-block">
+            <button id="toggle-button">Toggle Info</button>
+            <div id="toggle-content">
+                <p>This is some hidden information that can be toggled on and off.</p>
+            </div>
+        </section>
+        
         <section id="home">
             <h2>Welcome to the World of Predators</h2>
             <p>Below is some information about different predators:</p>
@@ -143,5 +175,19 @@
         </table> 
     </section>       
     </main>
+    <script>
+        const toggleButton = document.getElementById('toggle-button');
+        const toggleContent = document.getElementById('toggle-content');
+            if (document.getElementById("toggle-button").style.display == "block") {
+        document.getElementById("toggle-button").style.display = "none"
+      } else {
+        document.getElementById("toggle-button").style.display = "block"
+      }
+    
+        toggleButton.addEventListener('click', () => {
+            toggleContent.classList.toggle('hidden');
+        });
+    </script>
+    
 </body>
 </html>
