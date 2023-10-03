@@ -73,26 +73,22 @@
         }
 
 
-#toggle-content {
-    display: none;
-}
 
-#toggle-button {
-    padding: 5px 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+            .toggle {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+            .toggle:hover {
+            background-color: #555;
+        }
 
-#toggle-button:hover {
-    background-color: #555;
-}
-
-.hidden {
-    display: none;
-}
+            .hidden {
+            display: none;
+            }
 </style>
 
     </style>
@@ -110,18 +106,24 @@
         <a href="#table">Table</a>
     </nav>
     <main>
-        <button id="toggle-content">Welcome to the World of Predators</button>
-        <section id="toggle-block">
-            <button id="toggle-button">Toggle Info</button>
-            <div id="toggle-content">
-                <p>This is some hidden information that can be toggled on and off.</p>
-            </div>
-        </section>
-        
-        <section id="home">
-            <h2>Welcome to the World of Predators</h2>
-            <p>Below is some information about different predators:</p>
-        </section>
+        <script>
+            function toggle() {
+              /* document.getElementById("panel").style.display = "block" */
+              if (document.getElementById("hidden").style.display == "block") {
+                document.getElementById("hidden").style.display = "none"
+              } else {
+                document.getElementById("hidden").style.display = "block"
+              }      
+            }
+          </script>
+          
+          <div class="toggle" id="asdf" onclick="toggle()">Info</div>
+          <div class="hidden" id="hidden">
+            <section id="home">
+                <h2>Welcome to the World of Predators</h2>
+                <p>Below is some information about different predators:</p>
+            </section>         
+        </div>
 
         <section id="lions">
             <h2>Lion</h2>
@@ -174,20 +176,6 @@
             </tr>
         </table> 
     </section>       
-    </main>
-    <script>
-        const toggleButton = document.getElementById('toggle-button');
-        const toggleContent = document.getElementById('toggle-content');
-            if (document.getElementById("toggle-button").style.display == "block") {
-        document.getElementById("toggle-button").style.display = "none"
-      } else {
-        document.getElementById("toggle-button").style.display = "block"
-      }
-    
-        toggleButton.addEventListener('click', () => {
-            toggleContent.classList.toggle('hidden');
-        });
-    </script>
-    
+    </main>    
 </body>
 </html>
