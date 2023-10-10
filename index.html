@@ -99,6 +99,14 @@
             color: #444;
             }
 
+            #company-info h3 {
+                color: #fff;
+            }
+
+            #company-info p {
+                color: #fff;
+            }
+
             .content { 
                 margin-top: 80px;
             }
@@ -117,11 +125,24 @@
         <header>
             <h1>Instinctive Wellness Co.</h1>
             <h2>Awaken Your Inner Predator</h2>
-            <a class="learn-button" href="#cta">Learn More</a>
+            <a class="learn-button" href="javascript:void(0);" onclick="toggleCompanyInfo()">Learn More</a>
             <a class="buy-button" href="#buy">Buy</a>
         </header>
+        <div id="company-info" style="display: none;">
+            <h3>About Our Company</h3>
+            <p>At Instinctive Wellness Co, we're on a mission to reawaken the primal instincts within every modern man. We understand that in today's fast-paced world, men often find themselves disconnected from their inner strength, vitality, and purpose. That's why we've dedicated ourselves to providing a comprehensive solution to empower you to become the predator you were meant to be.</p>
+        </div>
 
-        <div class="content">
+        <script>
+            function toggleCompanyInfo() {
+                var companyInfo = document.getElementById("company-info");
+                if (companyInfo.style.display === "none" || companyInfo.style.display === "") {
+                    companyInfo.style.display = "block";
+                } else {
+                    companyInfo.style.display = "none";
+                }
+            }
+        </script>
 
         </div>
     </body>
