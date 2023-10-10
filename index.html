@@ -1,187 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Predators</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hero Page</title>
+        <style>
+            body, html {
+                margin: 0; 
+                padding: 0;
+                height: 100%; 
+            }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                display: flex; 
+                flex-direction: column;
+                justify-content: center; 
+                align-items: center;
+            }
 
-        h1 {
-            margin: 0;
-        }
+            header {
+                text-align: center; 
+            }
 
-        nav {
-            background-color: #444;
-            padding: 10px 0;
-            text-align: center;
-        }
+            h1{
+                font-size: 36px;
+            }
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-        }
+            h2 {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
-        
-        nav .color {
-            color: red; 
-        }
-
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #333;
-            color: #fff;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-        }
-
-
-
-            .toggle {
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-            .toggle:hover {
+            .learn-button {
+                padding: 10px 20px; 
+                background-color: #333;
+                color: #fff;
+                border: none; 
+                border-radius: 5px;
+                font-size: 16px;
+                text-decoration: none;
+                margin-right: 10px;
+            }
+            .learn-button:hover {
             background-color: #555;
-        }
-
-            .hidden {
-            display: none;
             }
-</style>
 
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Predators</h1>
-    </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#lions">Lions</a>
-        <a href="#tigers">Tigers</a>
-        <a href="#wolves">Wolves</a>
-        <a href="#Yuujirou">Yuujirou</a>
-        <a class="color" href="#table">Table</a>
-    </nav>
-    <main>
-        <script>
-            function toggle() {
-              /* document.getElementById("panel").style.display = "block" */
-              if (document.getElementById("hidden").style.display == "block") {
-                document.getElementById("hidden").style.display = "none"
-              } else {
-                document.getElementById("hidden").style.display = "block"
-              }      
+            .buy-button {
+                padding: 10px 20px; 
+                background-color: #333;
+                color: #fff;
+                border: none; 
+                border-radius: 5px;
+                font-size: 16px;
+                text-decoration: none;
             }
-          </script>
-          
-          <div class="toggle" id="asdf" onclick="toggle()">Info</div>
-          <div class="hidden" id="hidden">
-            <section id="home">
-                <h2>Welcome to the World of Predators</h2>
-                <p>Below is some information about different predators:
-                    Also, click to the table to look compact information.
-                </p>
-            </section>         
+            .buy-button:hover {
+            background-color: #555;
+            }
+
+            .menu-line { 
+                display: flex; 
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 10px 0;
+                background-color: #444;
+                color: #fff;
+                position: fixed;
+                top: 0;
+            }
+
+            .logo {
+                font-size: 24px;
+                margin-right: 20px;
+            }
+
+            .menu-items {
+                display: flex; 
+                gap: 20px; 
+            }
+
+            .menu-item {
+                text-decoration: none;
+                color: #fff;
+                font-size: 16px;
+                position: relative;
+            }
+            .menu-item span {
+                transition: background-color 0.3s;
+            }
+            .menu-item:hover span {
+            background-color: #fff;
+            color: #444;
+            }
+
+            .content { 
+                margin-top: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu-line">
+            <div class="logo">IW</div>
+            <div class="menu-items">
+                <a class="menu-item" href="#vit"><span>V</span><span>i</span><span>t</span><span>a</span><span>m</span><span>i</span><span>n</span><span>s</span></a>
+                <a class="menu-item" href="#medic"><span>M</span><span>e</span><span>d</span><span>i</span><span>c</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span><span>s</span></a>
+                <a class="menu-item" href="#training"><span>T</span><span>&</span><span>M</span><span>S</span><span>e</span><span>s</span><span>s</span><span>i</span><span>o</span><span>n</span></a>
+                <a class="menu-item" href="#about"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a>
+            </div>
         </div>
+        <header>
+            <h1>Instinctive Wellness Co.</h1>
+            <h2>Awaken Your Inner Predator</h2>
+            <a class="learn-button" href="#cta">Learn More</a>
+            <a class="buy-button" href="#buy">Buy</a>
+        </header>
 
-        <section id="lions">
-            <h2>Lion</h2>
-            <p>The lion is a big cat known for its majestic appearance and is often referred to as the "king of the jungle."</p>
-            <img src="https://cdn.britannica.com/29/150929-050-547070A1/lion-Kenya-Masai-Mara-National-Reserve.jpg" alt="Lion">
-        </section>
+        <div class="content">
 
-        <section id="tigers">
-            <h2>Tiger</h2>
-            <p>Tigers are the largest species of big cats and are known for their distinctive orange coat with black stripes.</p>
-            <img src="https://as2.ftcdn.net/v2/jpg/01/29/13/31/1000_F_129133169_qFi4lt8IXlhZbCZxgFWM4QkuaEql2SLi.jpg" alt="Tiger">
-        </section>
-
-        <section id="wolves">
-            <h2>Wolf</h2>
-            <p>Wolves are highly social and intelligent predators known for their hunting prowess and pack behavior.</p>
-            <img src="https://cdn.britannica.com/07/5207-050-5BC9F251/Gray-wolf.jpg" alt="Wolf">
-        </section>
-        <section id="Yuujirou">
-            <h2>Yuujirou</h2>
-            <p>Superhuman, martial artist, Kayo of all Kayos, highly paid freelance mercenary and assassin for various governments and organizations, father of Bucky Hanma and Jack Hanma.</p>
-            <img src="https://pm1.aminoapps.com/8400/e6a76dbfe958332ff258a76be65fb0e35cb7c51ar1-800-999v2_uhq.jpg" alt="Wolf">
-        </section>
-        <section id="table">
-        <table>
-            <tr>
-                <th>Animal</th>
-                <th>Description</th>
-                <th>Image</th>
-            </tr>
-            <tr>
-                <td>Lion</td>
-                <td>The lion is a big cat known for its majestic appearance and is often referred to as the "king of the jungle."</td>
-                <td><img src="https://cdn.britannica.com/29/150929-050-547070A1/lion-Kenya-Masai-Mara-National-Reserve.jpg" alt="Lion"></td>
-            </tr>
-            <tr>
-                <td>Tiger</td>
-                <td>Tigers are the largest species of big cats and are known for their distinctive orange coat with black stripes.</td>
-                <td><img src="https://as2.ftcdn.net/v2/jpg/01/29/13/31/1000_F_129133169_qFi4lt8IXlhZbCZxgFWM4QkuaEql2SLi.jpg" alt="Tiger"></td>
-            </tr>
-            <tr>
-                <td>Wolf</td>
-                <td>Wolves are highly social and intelligent predators known for their hunting prowess and pack behavior.</td>
-                <td><img src="https://cdn.britannica.com/07/5207-050-5BC9F251/Gray-wolf.jpg" alt="Wolf"></td>
-            </tr>
-            <tr>
-                <td>Yuujirou Hanma</td>
-                <td>Superhuman, martial artist, Kayo of all Kayos, highly paid freelance mercenary and assassin for various governments and organizations, father of Bucky Hanma and Jack Hanma.</td>
-                <td><img src="https://pm1.aminoapps.com/8400/e6a76dbfe958332ff258a76be65fb0e35cb7c51ar1-800-999v2_uhq.jpg" alt="Yuujirou Hanma"></td>
-            </tr>
-        </table> 
-    </section>       
-    </main>    
-</body>
+        </div>
+    </body>
 </html>
