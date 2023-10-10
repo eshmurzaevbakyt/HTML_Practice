@@ -12,8 +12,7 @@
             }
 
             body {
-                background-image: url('https://secretcompass.com/wp-content/uploads/2018/01/Jungle-Rot.jpg');
-                background-size: cover;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://secretcompass.com/wp-content/uploads/2018/01/Jungle-Rot.jpg');                background-size: cover;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 font-family: Arial, sans-serif;
@@ -28,11 +27,13 @@
             }
 
             h1{
-                font-size: 36px;
+                font-size: 72px;
+                color: white;
             }
 
             h2 {
                 font-size: 24px;
+                color: white;
                 margin-bottom: 30px;
             }
 
@@ -65,10 +66,10 @@
 
             .menu-line { 
                 display: flex; 
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
                 width: 100%;
-                padding: 10px 0;
+                padding: 10px 40px !important;
                 background-color: black;
                 color: #fff;
                 position: fixed;
@@ -78,6 +79,7 @@
             .logo {
                 font-size: 24px;
                 margin-right: 20px;
+        
             }
 
             .menu-items {
@@ -118,7 +120,7 @@
     </head>
     <body>
         <div class="menu-line">
-            <div class="logo">IW</div>
+            <div class="logo" href="#ll">IW</div>
             <div class="menu-items">
                 <a class="menu-item" href="#vit"><span>V</span><span>i</span><span>t</span><span>a</span><span>m</span><span>i</span><span>n</span><span>s</span></a>
                 <a class="menu-item" href="#medic"><span>M</span><span>e</span><span>d</span><span>i</span><span>c</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span><span>s</span></a>
@@ -136,7 +138,6 @@
             <h3>About Our Company</h3>
             <p>At Instinctive Wellness Co, we're on a mission to reawaken the primal instincts within every modern man. We understand that in today's fast-paced world, men often find themselves disconnected from their inner strength, vitality, and purpose. That's why we've dedicated ourselves to providing a comprehensive solution to empower you to become the predator you were meant to be.</p>
         </div>
-
         <script>
             function toggleCompanyInfo() {
                 var companyInfo = document.getElementById("company-info");
@@ -147,7 +148,5 @@
                 }
             }
         </script>
-
-        </div>
     </body>
 </html>
