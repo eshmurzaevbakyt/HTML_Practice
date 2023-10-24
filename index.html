@@ -5,12 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hero Page</title>
         <style>
-            body, html {
-                margin: 0; 
-                padding: 0;
+             * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            }
+            html, body {
                 height: 100%; 
             }
-
+                header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        background-color: black;
+        color: white;
+        padding: 10px;      
+        }
+        header .logo {
+      align-items: center;
+      display: flex;
+      gap: 10px;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+    footer {
+      background-color: black;
+      color: white;
+      padding: 10px;
+    }
             body {
                 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://secretcompass.com/wp-content/uploads/2018/01/Jungle-Rot.jpg');                background-size: cover;
                 background-repeat: no-repeat;
@@ -22,9 +46,6 @@
                 align-items: center;
             }
 
-            header {
-                text-align: center; 
-            }
 
             h1{
                 font-size: 72px;
@@ -119,6 +140,7 @@
         </style>
     </head>
     <body>
+        <header>
         <div class="menu-line">
             <div class="logo" href="#ll">IW</div>
             <div class="menu-items">
@@ -128,16 +150,17 @@
                 <a class="menu-item" href="#about"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a>
             </div>
         </div>
-        <header>
+    </header>
+    <main>
+        <section class="hero">
             <h1>Instinctive Wellness Co.</h1>
             <h2>Awaken Your Inner Predator</h2>
             <a class="learn-button" href="javascript:void(0);" onclick="toggleCompanyInfo()">Learn More</a>
             <a class="buy-button" href="#buy">Buy</a>
-        </header>
         <div id="company-info" style="display: none;">
             <h3>About Our Company</h3>
             <p>At Instinctive Wellness Co, we're on a mission to reawaken the primal instincts within every modern man. We understand that in today's fast-paced world, men often find themselves disconnected from their inner strength, vitality, and purpose. That's why we've dedicated ourselves to providing a comprehensive solution to empower you to become the predator you were meant to be.</p>
-        </div>
+        </div>        
         <script>
             function toggleCompanyInfo() {
                 var companyInfo = document.getElementById("company-info");
@@ -148,5 +171,10 @@
                 }
             }
         </script>
+        </section>
+        </main>
+        <footer>
+        (c) 2023 Fitness inc. 
+        </footer>
     </body>
 </html>
