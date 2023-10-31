@@ -8,7 +8,7 @@ Our offerings are tailored to cater to individuals of all ages. We invite men fr
 
 ## **Call to Action**
 
-For those who are already acquainted with our brand and eager to embark on their holistic journey to better health, we invite you to click the "Buy Now" button and start experiencing the difference today.
+The button is used to learn briefly about the company without going anywhere on the home page
 
 ## **Unique Selling Proposition**
 
