@@ -58,10 +58,18 @@
 		}
 
 		.hero h1 {
-			font-size: 70px;
+			font-size: 75px;
+            font: arial;
 			padding-left: 10px;
 			padding-right: 10px;
+            margin-bottom: 30px;
 		}
+
+        .hero h2 {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 30px;
+        }
 
 		.hero div {
 			font-size: 28px;
@@ -102,7 +110,7 @@
             background-color: #555;
             }
 
-            .buy-button {
+            /* .buy-button {
                 padding: 10px 20px; 
                 background-color: #333;
                 color: #fff;
@@ -113,7 +121,7 @@
             }
             .buy-button:hover {
             background-color: #555;
-            }
+            } */
 
             svg {
             height: 200px;
@@ -166,6 +174,21 @@
 			color: aliceblue;
 
 		}
+        #company-info h3 {
+                color: #fff;
+                margin-bottom: 10px;
+            }
+
+            #company-info p {
+                color: #fff;
+                display: block;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .content { 
+                margin-top: 80px;
+            }
 	</style>
 </head>
 
@@ -173,10 +196,10 @@
 	<header>
         <div class="logo" href="#ll">IW</div>
 		<div class="menu-items">
+            <a class="menu-item" href="#about"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a>
             <a class="menu-item" href="#vit"><span>V</span><span>i</span><span>t</span><span>a</span><span>m</span><span>i</span><span>n</span><span>s</span></a>
             <a class="menu-item" href="#medic"><span>M</span><span>e</span><span>d</span><span>i</span><span>c</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span><span>s</span></a>
             <a class="menu-item" href="#training"><span>T</span><span>&</span><span>M</span><span>S</span><span>e</span><span>s</span><span>s</span><span>i</span><span>o</span><span>n</span></a>
-            <a class="menu-item" href="#about"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a>
 		</div>
 	</header>
 	<main>
@@ -184,7 +207,7 @@
             <h1>Instinctive Wellness Co.</h1>
             <h2>Awaken Your Inner Predator</h2>
             <a class="learn-button" href="javascript:void(0);" onclick="toggleCompanyInfo()">Learn More</a>
-            <a class="buy-button" href="#buy">Buy</a>
+            <!-- <a class="buy-button" href="#buy">Buy</a> -->
         <div id="company-info" style="display: none;">
             <h3>About Our Company</h3>
             <p>At Instinctive Wellness Co, we're on a mission to reawaken the primal instincts within every modern man. We understand that in today's fast-paced world, men often find themselves disconnected from their inner strength, vitality, and purpose. That's why we've dedicated ourselves to providing a comprehensive solution to empower you to become the predator you were meant to be.</p>
