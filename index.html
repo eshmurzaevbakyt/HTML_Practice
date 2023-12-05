@@ -4,257 +4,32 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Instinctive Wellness Co.</title>
-
-	<style>
-		* {
-			margin: 0px;
-			padding: 0px;
-            box-sizing: border-box;
-		}
-
-		body {
-			height: 100%;
-		}
-
-		header {
-			background-color: black;
-			color: white;
-			padding: 10px;
-			display: flex;
-			gap: 100px;
-			font-size: 25px;
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: center;
-		}
-
-		footer {
-			background-color: black;
-			align-content: center;
-			color: white;
-			padding: 10px;
-		}
-
-		.hero {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			height: 100vh;
-			color: white;
-			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://secretcompass.com/wp-content/uploads/2018/01/Jungle-Rot.jpg');                
-			background-size: cover;
-			background-position: center;
-		}
-
-		.img-header {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			height: 100px;
-			max-width: 900px;
-		}
-
-        .hero h1 {
-            font-size: 40px;
-            font-family: 'Arial', sans-serif; 
-            text-align: center; 
-            margin-bottom: 30px;
-        }
-
-        .hero h2 {
-            font-size: 18px;
-            color: white;
-            text-align: center;
-            align-self: center;
-            margin-bottom: 30px;
-            display: block;
-            max-width: 400px;
-        }
-
-
-		.hero div {
-			font-size: 28px;
-			padding: 40px 20px 40px 20px;
-		}
-
-        .menu-items {
-                display: flex; 
-                padding: 0px 20px;
-                gap: 20px; 
-            }
-
-            .menu-item {
-                text-decoration: none;
-                color: #fff;
-                font-size: 16px;
-                position: relative;
-            }
-            .menu-item span {
-                transition: background-color 0.3s;
-            }
-            .menu-item:hover span {
-            background-color: #fff;
-            color: #444;
-            }
-
-            .learn-button {
-                padding: 10px 20px; 
-                background-color: #333;
-                color: #fff;
-                border: none; 
-                border-radius: 5px;
-                font-size: 16px;
-                text-decoration: none;
-                margin-right: 10px;
-            }
-            .learn-button:hover {
-            background-color: #555;
-            }
-
-            /* .buy-button {
-                padding: 10px 20px; 
-                background-color: #333;
-                color: #fff;
-                border: none; 
-                border-radius: 5px;
-                font-size: 16px;
-                text-decoration: none;
-            }
-            .buy-button:hover {
-            background-color: #555;
-            } */
-
-            svg {
-            height: 200px;
-            width: 200px;
-            }
-
-		#benefits {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			background-size: cover;
-			margin-top: 0;
-			padding-left: 200px;
-			padding-right: 200px;
-			color: white;
-			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.pixabay.com/photo/2017/10/18/16/08/wolves-2864647_1280.jpg');
-		}
-
-		#benefits p {
-			font-size: 25px;
-		}
-        
-
-		#benefits h2 {
-			align-self: center;
-			font-size: 60px;
-			text-align: center;
-			padding-top: 75px;
-			padding-bottom: 50px;
-		}
-
-		#benefits h3 {
-            align-self: center;
-            font-size: 30px;
-		}
-
-		.benefit {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			padding: 50px;
-			gap: 50px;
-			color: aliceblue;
-			margin: 20px;
-			
-		}
-
-		.reverse {
-			flex-direction: row-reverse;
-			color: aliceblue;
-
-		}
-        #company-info h3 {
-                color: #fff;
-                margin-bottom: 10px;
-            }
-
-            #company-info p {
-                color: #fff;
-                display: block;
-                max-width: 400px;
-                margin: 0 auto;
-            }
-
-            .content { 
-                margin-top: 80px;
-            }
-            .burger-menu {
-            display: none;
-            cursor: pointer;
-        }
-
-        .burger-menu div {
-            width: 30px;
-            height: 3px;
-            background-color: white;
-            margin: 6px 0;
-            transition: 0.4s;
-        }
-
-        .menu {
-            display: flex;
-            gap: 100px;
-        }
-
-        .menu-items {
-            display: flex;
-            gap: 20px;
-        }
-
-        @media only screen and (max-width: 768px) {
-            .burger-menu {
-                display: block;
-            }
-
-            .menu {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                width: 100%;
-                background-color: black;
-                padding: 20px;
-            }
-
-            .menu.show {
-                display: flex;
-            }
-        }
-	</style>
+    <link rel="stylesheet" href="./assets/main.css">
 </head>
 
 <body>
 	<header>
         <div class="logo" href="#ll">IW</div>
-        <div class="burger-menu" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
         <div class="menu">
 		<div class="menu-items">
+            <nav>
             <a class="menu-item" href="https://github.com/eshmurzaevbakyt/HTML_Practice/blob/main/goals.md"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a>
             <a class="menu-item" href="https://www.takecareof.com/articles/best-vitamins-supplements-for-men"><span>V</span><span>i</span><span>t</span><span>a</span><span>m</span><span>i</span><span>n</span><span>s</span></a>
             <a class="menu-item" href="https://www.drugwatch.com/testosterone/"><span>M</span><span>e</span><span>d</span><span>i</span><span>c</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span><span>s</span></a>
             <a class="menu-item" href="https://www.muscleandstrength.com/workouts/muscle-strength-full-body-workout-routine"><span>T</span><span>&</span><span>M</span><span>S</span><span>e</span><span>s</span><span>s</span><span>i</span><span>o</span><span>n</span></a>
+           </nav>
+           <button class="hamburger">
+            <div class="bar"></div>
+           </button>
 		</div>
     </div>
 	</header>
+    <nav class="mobile-nav">
+        <a href="#">About</a>
+        <a href="#">Vitamins</a>
+        <a href="#">Medications</a>
+        <a href="#">T&M Session</a>
+    </nav>
 	<main>
         <section class="hero">
             <h1>Enhancing Well-being with High-Quality Health Products</h1>
@@ -306,12 +81,16 @@
 	<footer>
 		(c) 2023 Instinctive Wellness Co.
 	</footer>
-    <script>
+    <!-- <script>
         function toggleMenu() {
-            var menu = document.querySelector('.menu');
+            var menu = document.querySelector('.hamburger');
             menu.classList.toggle('show');
-        }
+        } -->
     </script>
+    <script src="./assets/main.js"></script>
 </body>
 
 </html>
+
+
+
